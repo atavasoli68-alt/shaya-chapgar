@@ -12,7 +12,7 @@
     "db:migrate": "prisma migrate deploy",
     "db:seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts",
     "db:studio": "prisma studio",
-    "postinstall": "prisma generate"
+    "vercel-build": "npx prisma generate && npx next build"
   },
   "dependencies": {
     "@prisma/client": "^7.8.0",
